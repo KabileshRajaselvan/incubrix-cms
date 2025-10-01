@@ -2022,7 +2022,7 @@ async function startServer() {
       console.warn('Could not generate initial RSS feed:', error.message);
     }
     
-    app.listen(PORT, () => {
+    app.listen(PORT, '0.0.0.0', () => {
       console.log(`✅ Incubrix Enhanced CMS Server v2.2 running on port ${PORT}`);
       console.log(`📁 Upload directory: ${uploadsDir}`);
       console.log(`🗄️ Database: ./incubrix_cms.db`);
